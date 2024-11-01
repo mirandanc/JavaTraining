@@ -5,6 +5,33 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="88af64a9-0f8a-4008-98da-75b976353f39" name="Changes" comment="End of Spring REST">
+      <change afterPath="$PROJECT_DIR$/9-advanced-mapping/2-one-to-one-bi/.gitattributes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/9-advanced-mapping/2-one-to-one-bi/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/9-advanced-mapping/2-one-to-one-bi/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/9-advanced-mapping/2-one-to-one-bi/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/9-advanced-mapping/2-one-to-one-bi/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/9-advanced-mapping/2-one-to-one-bi/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/9-advanced-mapping/2-one-to-one-bi/src/main/java/com/luv2code/cruddemo/CruddemoApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/9-advanced-mapping/2-one-to-one-bi/src/main/java/com/luv2code/cruddemo/dao/AppDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/9-advanced-mapping/2-one-to-one-bi/src/main/java/com/luv2code/cruddemo/dao/AppDAOImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/9-advanced-mapping/2-one-to-one-bi/src/main/java/com/luv2code/cruddemo/entity/Instructor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/9-advanced-mapping/2-one-to-one-bi/src/main/java/com/luv2code/cruddemo/entity/InstructorDetail.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/9-advanced-mapping/2-one-to-one-bi/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/9-advanced-mapping/2-one-to-one-bi/src/test/java/com/luv2code/cruddemo/CruddemoApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/9-advanced-mapping/3-one-to-many/.gitattributes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/9-advanced-mapping/3-one-to-many/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/9-advanced-mapping/3-one-to-many/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/9-advanced-mapping/3-one-to-many/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/9-advanced-mapping/3-one-to-many/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/9-advanced-mapping/3-one-to-many/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/9-advanced-mapping/3-one-to-many/src/main/java/com/luv2code/cruddemo/CruddemoApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/9-advanced-mapping/3-one-to-many/src/main/java/com/luv2code/cruddemo/dao/AppDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/9-advanced-mapping/3-one-to-many/src/main/java/com/luv2code/cruddemo/dao/AppDAOImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/9-advanced-mapping/3-one-to-many/src/main/java/com/luv2code/cruddemo/entity/Course.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/9-advanced-mapping/3-one-to-many/src/main/java/com/luv2code/cruddemo/entity/Instructor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/9-advanced-mapping/3-one-to-many/src/main/java/com/luv2code/cruddemo/entity/InstructorDetail.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/9-advanced-mapping/3-one-to-many/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/9-advanced-mapping/3-one-to-many/src/test/java/com/luv2code/cruddemo/CruddemoApplicationTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -32,6 +59,9 @@
   &quot;associatedIndex&quot;: 2
 }</component>
   <component name="ProjectId" id="2o87f0q4VCwTD0CpOYyIJHV2IwP" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -40,8 +70,9 @@
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;openjdk-23&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/miran/IdeaProjects/java-spring-course&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/miran/IdeaProjects/java-spring-course/9-advanced-mapping/3-one-to-many&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -50,6 +81,12 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\miran\IdeaProjects\java-spring-course\9-advanced-mapping\3-one-to-many" />
+      <recent name="C:\Users\miran\IdeaProjects\java-spring-course\9-advanced-mapping\2-one-to-one-bi" />
+    </key>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -67,7 +104,9 @@
       <option name="presentableId" value="Default" />
       <updated>1730239448413</updated>
       <workItem from="1730239449525" duration="1264000" />
-      <workItem from="1730292774439" duration="1986000" />
+      <workItem from="1730292774439" duration="4994000" />
+      <workItem from="1730377907499" duration="1933000" />
+      <workItem from="1730463997541" duration="1205000" />
     </task>
     <task id="LOCAL-00001" summary="End of Spring REST">
       <option name="closed" value="true" />
