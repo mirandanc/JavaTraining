@@ -1,10 +1,7 @@
 package com.luv2code.cruddemo;
 
 import com.luv2code.cruddemo.dao.AppDAO;
-import com.luv2code.cruddemo.entity.Course;
-import com.luv2code.cruddemo.entity.Instructor;
-import com.luv2code.cruddemo.entity.InstructorDetail;
-import com.luv2code.cruddemo.entity.Review;
+import com.luv2code.cruddemo.entity.*;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -23,10 +20,71 @@ public class CruddemoApplication {
 	@Bean
 	public CommandLineRunner commandLineRunner(AppDAO appDAO) {
 		return runner -> {
-//			createCourseAndReviews(appDAO);
-//			retriveCourseAndReviews(appDAO);
-			deleteCourseAndReviews(appDAO);
+//			createCourseAndStudents(appDAO);
+//			findCourseAndStudents(appDAO);
+//			findStudentAndCourses(appDAO);
+//			addMoreCoursesForStudent(appDAO);
+//			deleteCourse(appDAO);
+			deleteStudent(appDAO);
 		};
+	}
+
+	private void deleteStudent(AppDAO appDAO) {
+		int theId = 1;
+		System.out.println(theId);
+		appDAO.deleteStudentById(theId);
+		System.out.println(theId);
+		System.out.println("Done!");
+	}
+
+	private void addMoreCoursesForStudent(AppDAO appDAO) {
+		int theId = 2;
+		Student tempStudent = appDAO.findStudentAndCoursesByStudentId(theId);
+		Course tempCourse1 = new Course("Rubik's cube: How to");
+		Course tempCourse2 = new Course("MMO design 101");
+
+		tempStudent.addCourse(tempCourse1);
+		tempStudent.addCourse(tempCourse2);
+
+		System.out.println(tempStudent);
+		System.out.println("associated courses: " + tempStudent.getCourses());
+
+		appDAO.update(tempStudent);
+
+		System.out.println("Done!");
+	}
+
+	private void findStudentAndCourses(AppDAO appDAO) {
+		int theId = 2;
+		Student tempStudent = appDAO.findStudentAndCoursesByStudentId(theId);
+		System.out.println(tempStudent);
+		System.out.println("Courses: " + tempStudent.getCourses());
+
+		System.out.println("Done!");
+
+	}
+
+	private void findCourseAndStudents(AppDAO appDAO) {
+		int theId = 10;
+		Course tempCourse = appDAO.findCourseAndStudentsByCourseId(theId);
+		System.out.println("Loaded course: " + tempCourse);
+		System.out.println("Students: " + tempCourse.getStudents());
+		System.out.println("Done!");
+	}
+
+	private void createCourseAndStudents(AppDAO appDAO) {
+		Course tempCourse = new Course("Dota academy");
+		Student tempStudent1 = new Student("John", "Doe", "email@email.com");
+		Student tempStudent2 = new Student("Zé", "Maria", "email@email.com");
+		tempCourse.addStudent(tempStudent1);
+		tempCourse.addStudent(tempStudent2);
+
+		System.out.println(tempCourse);
+		System.out.println(tempCourse.getStudents());
+
+		appDAO.save(tempCourse);
+
+		System.out.println("Done!");
 	}
 
 	private void deleteCourseAndReviews(AppDAO appDAO) {
